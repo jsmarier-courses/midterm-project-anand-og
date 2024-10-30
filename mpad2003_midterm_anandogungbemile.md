@@ -1,11 +1,12 @@
-**Date**<br>
-**Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
+**October 30th, 2024**<br>
+**MPAD2003 Intro to Data Storytelling**<br>
+**Anand Ogungbemile**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
 Use one hashtag symbol (`#`) to create a level 1 heading like this one.
+#Exploratory Data Analysis (EDA)
 
 ## Foreword
 
