@@ -29,6 +29,9 @@ Insert text here.
 
 ## 2. Getting Data
 
+Becuase of the size of the data set, we are unable to use commands such as IMPORTDATA on Google Sheets, so instead we must download the raw data file, and import it into google sheets, Using the import option within the file tab. because the raw data file is a cvs, I choose the comma seperator option, and after a  few second of waiting, all the data loads in perfectly. the data set contains 11 columns, and 28,539 rows(minus 1 becuase the top row  is for labels). each row pertains to a specific service request made to the city of Ottawa. columns B shows whether the request is on going or resolved. Colunmns C and D give us more details about what the request was/is. E and F tell us the date a request was made and the date it was resolved (if it was). G, H, I, and J are descripted of the location ( address, coordinates and warda). lastly, K gives us the way the request was made (walkin, web, email, dispatch, etc...). 
+looking at this data, my main wonder is how long did certain requests take to be resolved in comparison to others and why? is the I correlation between the wait times, and what part of the city a request was made in? h 
+
 Use two hashtag symbols (`##`) to create a level 2 heading like this one.
 
 To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
