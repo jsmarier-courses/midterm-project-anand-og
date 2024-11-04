@@ -35,7 +35,7 @@ Use two hashtag symbols (`##`) to create a level 2 heading like this one.
 
 To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
 
-![](import-screen-capture.png)<br>
+![](spreedsheet-table.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
 
 **Here are examples of functions and lines of code put in grey boxes:**
@@ -52,6 +52,10 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
+VIMO stands for Valid, invalid, missing and Outliers. It's and analysis method to determine the validity of a dataset. in this method, we take a look at the variables in the set, and ask is the data valid or invalid. for example, there are 24 wards in Ottawa, if one of our datapoints was given the value of ward 25, that is invalid. missing just means the value of the variable is unknown, or not logged. we see quite a bit of missing data within our data set,  particularly for the address variable, and also the coordinate variables. Outliers are variables which aren't invalid, but just doesn't match the general trend of the data. for example, if all the coordinates were relatively close, and one of the coordinates was far away from the rest, the would be an outlier. 
+
+### Location/Ward validity check
+to check the validity of the ward data, I created a map in Google my maps and imported the the data from my spread sheet. I then styled by ward, and import A kml file of Ottawa's ward borders. this was tricky because the amount of data points in the spreed sheet were more then the maximum number you can import with a layer at a time, so I had to eliminate the data points without ward information, or coordinate information, and then split the data into 2 layers. I'm still not sure if My Maps took all the data Imported, but it atleast took a large enought sample. looking at the map I dont see any data points with miss labeled Wards, so I will continue under the assumption that said data is accurate.
 
 Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
