@@ -5,23 +5,6 @@
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
-#Exploratory Data Analysis (EDA)
-
-## Foreword
-
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
@@ -37,17 +20,6 @@ To include a screen capture, use the sample code below. Your images should be sa
 
 ![](spreedsheet-table.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
-
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ## 3. Understanding Data
 
@@ -66,12 +38,6 @@ it doesn't take much analysis to see that there is a lot of missing data here. o
 
 #### outliers
 the most obvious Outlier visible to me was that the data of the final request was in september, where as the rest of the requests where from the month of august. seems like an accidental inclusion. if you want to use this data to come to a conclusion about service requests in the the month of august, you'd have to cut this one out. there are potentially other data point you could classify as outliers, but I am not able to find any other clear examples after combing through the data a few times
-
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
-
-**For example:**
-
-As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
