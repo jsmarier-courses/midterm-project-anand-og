@@ -1,7 +1,2 @@
-## Template for the Midterm Project: Exploratory Data Analysis (EDA)
-
-Here are the files for the midterm project of courses JOU4100 Digital Journalism II and JOU4500 Journalisme numérique II at the University of Ottawa, and MPAD2003 Introductory Data Storytelling offered at Carleton University.
-
-## Modèle pour le Projet de mi-session : Analyse exploratoire de données (AED)
-
-Vous trouverez ici les fichiers pour le projet de mi-session des cours JOU4100 Digital Journalism II et JOU4500 Journalisme numérique II à l'Université d'Ottawa, et du cours MPAD2003 Introductory Data Storytelling offert à l'Université Carleton.
+Original data source was the Open Ottawa website, but it was processed by my university instructor who passed it on to me, keeping only data from a portion of the year 2024. I imported the csv file into sheets, tested the validity, cleaned and organized the data a bit, then made my calculations for my main analysis. the results, ward 4 had the the longest wait times, but by a margin small enough to potentially be meaningless.
+ 

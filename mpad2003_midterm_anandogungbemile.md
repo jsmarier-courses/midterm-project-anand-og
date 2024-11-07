@@ -75,12 +75,12 @@ As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
-My first step was to freeze the top row in place as a Label row, so that for one, I don't have to worry about it being misplaced to a different position while sorting and filtering, and so that the labels are always visible , so it is clear what each column represents so matter where you are looking on the spreadsheet. Then I implimented the filter feature of Google Sheets, so I could traverse the data set for specific variables far easier. I began stretching the columns to various proportions so that more of the data was visable and less space was wasted. while doing that, I ran into the issue of the discription column being far too wide, becuause of the inclusion of the french translations, so I used the `SPLIT` function to separate and delete the french.  
+My first step was to freeze the top row in place as a Label row, so that for one, I don't have to worry about it being misplaced to a different position while sorting and filtering, and so that the labels are always visible , so it is clear what each column represents so matter where you are looking on the spreadsheet. Then I implimented the filter feature of Google Sheets, so I could traverse the data set for specific variables far easier. I began stretching the columns to various proportions so that more of the data was visable and less space was wasted. while doing that, I ran into the issue of the discription column being far too wide, becuause of the inclusion of the french translations, so I used the `=SPLIT(D, "|")` function to separate and delete the french translations.  
 
 ![](cleaned-spreadsheet.png)<br>
 ### 3.3. Exploratory Data Analysis (EDA)
 
-I calculated the average amount of time each district takes to resolve or cancel a request in there district. How did I do this? Well I started by using the `DATEIF` function, which allows you to get the difference between to dates. I copied the function down the spread sheet. then I used the `AVERAGEIF` function to get the average of each date difference based on which ward the request was from. I also used pivot table to find the total amounts of requests in each Ward. the results were not all that interesting. ward 12 had the most request, and ward 4 had the longest wait times, but the margins are not large enough for me to make any confident claim. 
+I calculated the average amount of time each district takes to resolve or cancel a request in there district. How did I do this? Well I started by using the `=DATEI(E1,F1, "d")` function, which allows you to get the difference between to dates. I copied the function down the spread sheet, into a new column(L). then I added a new column (M), which lists columns 1-24, and I used the `=AVERAGEIFS(L:L, J:J, M1)` function to get the average of each date difference based on which ward the request was from, pasted into  column N. I also used pivot table to find the total amounts of requests in each Ward. the results were not all that interesting. ward 12 had the most request, and ward 4 had the longest wait times, but the margins are not large enough for me to make any confident claim. 
 
 
 **This section should include a screen capture of your pivot table, like so:**
@@ -107,3 +107,5 @@ a-five-minute-field-guideData
 Accuracy and Validation: Methods to ensure the quality of data. (2020, September 23). Www.statcan.gc.ca. https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008
 
 Google My Maps: Show where stories happen. - Google News Initiative. (2024). Google News Initiative. https://newsinitiative.withgoogle.com/resources/trainings/fundamentals/google-my-maps-show-where-stories-happen/
+
+Planning, R. E. and E. D. (2022, December 1). Current population and household estimates. Ottawa.ca. https://ottawa.ca/en/living-ottawa/statistics-and-demographics/current-population-and-household-estimates#
